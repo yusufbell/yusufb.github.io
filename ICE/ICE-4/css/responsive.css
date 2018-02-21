@@ -17,17 +17,19 @@
 		padding:30px;
 	}
 	.resp-img {width: 100%;}
-	.black, .brown, .sky, .green, .red{
+	.black_horiz, .brown_horiz, .sky_horiz, .green_horiz, .red_horiz{
 	display: inline-block;
 	width: 100%;
 	}
-	.yellow, .blue{
+	.yellow_vert, .blue_vert{
 		display: inline-block;
 		width: 48.5%;
 		
 	}
 	.home-flag{
 		margin: 0 auto;
+	}
+	}
 
 @media only screen and (min-width: 1000px){
 	.logo{
@@ -48,14 +50,14 @@
 	}
 	.resp-img {width: 100%;}
 
-	.black, .brown, .sky, .green, .red{
+	.black_horiz, .brown_horiz, .sky_horiz, .green_horiz, .red_horiz{
 		display: inline-block;
 		width: 47.5%;
 	}
 	section.home-flag{
 	top: 0;
 	}
-	.yellow, .blue{
+	.yellow_vert, .blue_vert{
 		display: inline-block;
 		width: 22.5%;
 		
