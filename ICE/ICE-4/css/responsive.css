@@ -1,0 +1,66 @@
+@media only screen and (min-width: 650px){
+
+	.photo-cell{
+		float: left;
+		width: 60%;
+	}
+
+	.top-nav{
+		text-align:center;
+	}
+	.top-nav ul li{
+		display: inline-block;
+		position: static;
+		text-align: center;
+	}
+	.main-content-home{
+		padding:30px;
+	}
+	.resp-img {width: 100%;}
+	.black, .brown, .sky, .green, .red{
+	display: inline-block;
+	width: 100%;
+	}
+	.yellow, .blue{
+		display: inline-block;
+		width: 48.5%;
+		
+	}
+	.home-flag{
+		margin: 0 auto;
+
+@media only screen and (min-width: 1000px){
+	.logo{
+		text-align: left;
+		position: absolute;
+	}
+	.top-nav ul{
+	text-align: right;
+	height:63px;
+	}
+	.top-nav ul li{
+	display: inline-block;
+	}
+	.photo-grid div { 
+		height: 300px;
+		margin: 1%;
+		margin-bottom: 30px ;
+	}
+	.resp-img {width: 100%;}
+
+	.black, .brown, .sky, .green, .red{
+		display: inline-block;
+		width: 47.5%;
+	}
+	section.home-flag{
+	top: 0;
+	}
+	.yellow, .blue{
+		display: inline-block;
+		width: 22.5%;
+		
+	}
+	section.crafts{
+	display: flex;
+	}
+	}

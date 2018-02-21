@@ -80,6 +80,7 @@ header{
     box-shadow: 0px 18px 26px 1px rgba(141, 141, 139, .75);
     width: 100%;
     position: fixed;
+    z-index: 2;
 }
 /*mobile-first*/
 .top-nav ul{
