@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 4</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+    <style>
+    .errormsg { 
+        font-family:'Sofia';
+        color:red;
+        display:none; } 
+    </style>
+    
+    <script type="text/javascript">
+    function checkForm(){
+        // Write a function that displays the appropriate error message(s) if a field is left blank.  Make sure the form action is not performed if either field is blank.
+        var full = document.getElementById('fullname').value;
+        var full_error = document.getElementById('nameerrormsg');
+        var street = document.getElementById('streetaddr').value;
+        var street_error = document.getElementById('addrerrormsg');
+        if (full === "" && street === "") {
+            full_error.style.display = 'block';
+            street_error.style.display = 'block';
+            return false;
+        } else if (full === "" && street.length > 0) {
+            full_error.style.display = 'block';
+            street_error.style.display = 'none';
+
+            return false;
+
+        } else if (street === "" && full.length > 0) {
+            street_error.style.display = 'block';
+            full_error.style.display = 'none';
+            return false;
+        } else {
+            return true;
+        }
+    }
+      
+    </script>
+</head>
+<body>
+    <h1>Challenge 4</h1>
+    <form action="challenge5.html" onsubmit="return checkForm();">
+        <fieldset>
+        <legend>Personal details</legend>
+          <label for="fullname">Full name: </label>
+            <input type="text" name="fullname" id="fullname"><br/>
+            <p class="errormsg" id="nameerrormsg">Please enter your name above!</p>
+
+          <label for ="streetaddr"></label>
+            Street Address:
+            <input type="text" name="streetaddr" id="streetaddr">
+            <p class="errormsg" id="addrerrormsg">Please enter your street address!</p>
+        </fieldset>
+        <input type="submit" value="Submit it!"> 
+    </form>
+</body>
+</html>
