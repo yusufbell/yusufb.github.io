@@ -7,9 +7,10 @@
 
     <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha-384wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/logo1.png"/>
 	<title>ORGNL Clothing</title>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -17,132 +18,508 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 </head>
 <body>
-<header>
-<nav class="navbar navbar-default"></nav>
-<nav class="navbar navbar-expand-md navbar-light bg-light -top">
-<div class="container-fluid">
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target ="#navbarResponsive">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-	<a class="navbar-brand" href="home.html"><img src="images/logo23.png" class="img-fluid" alt="Responsive image"></a>
-	<div class="collapse navbar-collapse" id="navbarResponsive">
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item">
-	  			<a class="nav-link" href="home.html">Home</a>
-	  		</li>
-	  		<li class="nav-item active">
-	  			<a class="nav-link" href="Apparel.html">Apparel</a>
-	  		</li>
-	  		<li class="nav-item">
-	  			<a class="nav-link" href="About.html">About</a>
-	  		</li>
-	  		<li class="nav-item">
-	  			<a class="nav-link" href="Contact.html">Contact</a>
-	  		</li>
-	  	</ul>
-	</div>
-</div>
-</nav>
-</header>
-<div class="container">
-<div class="row pics">
-	<div class="col-xs-6 col-sm-4 col-lg-2">
-    	<img src="images/1.png" class="img-fluid" alt="Responsive image">
+  <header>
+    <nav class="navbar navbar-default"></nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-light -top">
+    <div class="container-fluid">
+    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target ="#navbarResponsive">
+    		<span class="navbar-toggler-icon"></span>
+    	</button>
+    	<a class="navbar-brand" href="home.html"><img src="images/logo23.png" class="img-fluid" alt="Responsive image"></a>
+    	<div class="collapse navbar-collapse" id="navbarResponsive">
+    		<ul class="navbar-nav ml-auto">
+    			<li class="nav-item">
+    	  			<a class="nav-link" href="home.html">Home</a>
+    	  		</li>
+    	  		<li class="nav-item active">
+    	  			<a class="nav-link" href="Apparel.html">Apparel</a>
+    	  		</li>
+    	  		<li class="nav-item">
+    	  			<a class="nav-link" href="About.html">About</a>
+    	  		</li>
+    	  		<li class="nav-item">
+    	  			<a class="nav-link" href="Contact.html">Contact</a>
+    	  		</li>
+    	  	</ul>
+    	</div>
     </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-    	<img src="images/2.jpg" class="img-fluid" alt="Responsive image">
+    </nav>
+  </header>
+  <div class="container">
+  <div class="row pics">
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m1">
+          <img src="images/1.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m2">
+      	 <img src="images/2.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+      	<a data-toggle="modal" data-target="#m3">
+          <img src="images/3.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m4">
+          <img src="images/4.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m5">
+          <img src="images/5.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m6">
+          <img src="images/6.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m7">
+          <img src="images/7.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m8">
+          <img src="images/8.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m9">
+          <img src="images/9.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m10">
+          <img src="images/10.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m11">
+          <img src="images/11.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m12">
+          <img src="images/12.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m13">
+          <img src="images/13.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m14">
+          <img src="images/14.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m15">
+          <img src="images/15.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m16">
+          <img src="images/16.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m17">
+          <img src="images/17.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m18">
+          <img src="images/18.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m19">
+          <img src="images/19.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m20">
+          <img src="images/20.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m21">
+          <img src="images/21.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m22">
+          <img src="images/22.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m23">
+          <img src="images/23.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m24">
+          <img src="images/24.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <div class="col-xs-6 col-sm-4 col-lg-2">
+        <a data-toggle="modal" data-target="#m25">
+          <img src="images/25.png" class="img-fluid" alt="Responsive image">
+        </a>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="m1" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/1.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m2" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/2.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m3" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/3.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m4" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/4.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m5" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/5.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m6" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/6.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m7" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/7.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m8" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/8.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m9" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/9.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m10" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/10.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m11" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/11.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m12" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/12.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m13" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/13.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m14" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/14.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m15" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/15.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m16" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/16.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m17" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/17.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m18" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/18.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m19" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/19.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m20" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/20.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m21" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/21.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m22" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/22.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m23" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/23.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m24" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/24.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+            <!-- Modal -->
+      <div class="modal fade" id="m25" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <img src="images/25.png" class="img-fluid" alt="Responsive image">
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+  </div>
+  </div>
+  <footer>
+    <div class="container-fluid padding">
+    <div class="row text-center">
+      <div class="padding d-none d-md-block d-lg-none">
+        <span>Follow us on:</span>
+        <a href="https://www.instagram.com/orgnl_/?hl=en"><i class="fab fa-instagram"></i></a>
+        <img src="images/logo.png" class="col-2 img-fluid" alt="Responsive image">
+      </div>
+      <div class="col-12 padding d-md-none">
+        <a href="https://www.instagram.com/orgnl_/?hl=en"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="padding d-none d-lg-block">
+        <a class="link col-2" href="home.html">Home</a>
+        <a class="link col-2" href="About.html">About</a>
+        <a class="link col-2" href="Contact.html">Contact</a>
+        <span>Follow us on:</span>
+        <a href="https://www.instagram.com/orgnl_/?hl=en"><i class="fab fa-instagram"></i></a>
+        <img src="images/logo.png" class="col-3 img-fluid" alt="Responsive image">
+      </div>
     </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-    	<img src="images/3.png" class="img-fluid" alt="Responsive image">
     </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-    	<img src="images/4.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-    	<img src="images/5.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-    	<img src="images/6.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/7.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/8.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/9.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/10.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/11.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/12.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/13.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/14.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/15.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/16.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/17.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/18.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/19.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/20.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/21.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/22.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/23.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/24.png" class="img-fluid" alt="Responsive image">
-    </div>
-    <div class="col-xs-6 col-sm-4 col-lg-2">
-   		<img src="images/25.png" class="img-fluid" alt="Responsive image">
-    </div>
-</div>
-</div>
-
+  </footer>
 </body>
-<footer>
-<div class="container-fluid padding">
-<div class="row text-center">
-	<div class="padding d-none d-md-block d-lg-none">
-		<h5 class="follow col-4">Follow us on:</h2>
-		<a href="https://www.instagram.com/orgnl_/?hl=en"><i class="fab fa-instagram"></i></a>
-		<img src="images/logo.png" class="col-2 img-fluid" alt="Responsive image">
-	</div>
-	<div class="col-12 padding d-md-none">
-		<a href="https://www.instagram.com/orgnl_/?hl=en"><i class="fab fa-instagram"></i></a>
-	</div>
-	<div class="col-12 padding d-none d-lg-block">
-		<a class="nav-link col-2" href="home.html">Home</a>
-		<a class="nav-link col-2" href="About.html">About</a>
-		<a class="nav-link col-2" href="Contact.html">Contact</a>
-		<h4 class="follow col-3">Follow us on:</h2>
-		<a href="https://www.instagram.com/orgnl_/?hl=en"><i class="fab fa-instagram"></i></a>
-		<img src="images/logo.png" class="col-3 img-fluid" alt="Responsive image">
-	</div>
-</footer>
 </html>
